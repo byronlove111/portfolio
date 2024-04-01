@@ -5,13 +5,13 @@ type Logo = {
   theme?: "light" | "dark" | undefined;
 };
 
-export default function LogoImage(logo: Logo) {
+export default function LogoImage({ location, theme }: Logo) {
   return (
     <div className="w-full relative ">
       {
         <Image
           src={
-            logo.location === "header"
+            location === "header"
               ? "images/MainLogoHeader.svg"
               : "images/MainLogoFooter.svg"
           }
@@ -23,6 +23,7 @@ export default function LogoImage(logo: Logo) {
           }}
           width={500}
           height={250}
+          priority={true}
         />
       }
     </div>

@@ -21,7 +21,7 @@ const Layout = ({ children }: Props) => {
             <LogoImage location="header" />
           </div>
         )}
-        <Navbar />
+        <Navbar location={pathname} />
         <div>{children}</div>
       </div>
       <Footer />
