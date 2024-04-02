@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="w-9/12 mb-96">
+      <div className="px-6 sm:px-0 sm:w-9/12 mb-96">
         {isHome && (
           <div className="mt-[-3px]">
             <LogoImage location="header" />
@@ -24,7 +24,7 @@ const Layout = ({ children }: Props) => {
         <Navbar location={pathname} />
         <div>{children}</div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

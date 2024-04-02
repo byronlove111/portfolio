@@ -19,6 +19,7 @@ export default function LogoImage({ location, theme }: Logo) {
           sizes="100vw"
           style={{
             width: "100%",
+            minWidth: "330px",
             height: "auto",
           }}
           width={500}
