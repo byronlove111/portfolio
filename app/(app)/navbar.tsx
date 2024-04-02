@@ -45,7 +45,10 @@ export default function Navbar(pathname?: any) {
           </Link>
         </Button>
         <Button variant="link" size="transparent" asChild>
-          <Link href="https://fr.linkedin.com/" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/abd-al-malik-bourassi-2b4423301/"
+            target="_blank"
+          >
             linkedin
           </Link>
         </Button>

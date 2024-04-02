@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="px-6 sm:px-0 sm:w-9/12 mb-96">
+      <div className="px-6 w-full sm:px-0 sm:w-9/12">
         {isHome && (
           <div className="mt-[-3px]">
             <LogoImage location="header" />
