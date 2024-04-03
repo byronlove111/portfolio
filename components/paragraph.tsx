@@ -168,11 +168,8 @@ const Div5 = () => {
           precision."
         </p>
         <p className="pt-6 lg:pt-10">
-          <span className={`${inter.className} font-bold `}>
-            {" "}
-            Jeremy Claudan
-          </span>{" "}
-          - Senior full-stack developer
+          <span className={`${inter.className} font-bold `}> Jeremy</span> -
+          Senior full-stack developer
         </p>
       </motion.div>
     </>
@@ -197,7 +194,7 @@ const Div6 = () => {
           I'm familiar with
           <span className={`${inter.className} font-bold `}>
             {" "}
-            these tools :
+            these tools:
           </span>{" "}
         </p>
       </motion.div>
@@ -216,7 +213,7 @@ const Div7 = () => {
     <>
       <motion.div
         ref={element}
-        className={`${inter.className} flex justify-between text-sm mb-16 mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${inter.className} flex justify-between text-xs md:text-sm mb-16 mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
         <ul className="flex flex-col gap-6">
