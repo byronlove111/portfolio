@@ -1,9 +1,8 @@
 "use client";
 
-import LogoImage from "@/app/(app)/logoImage";
+import LogoImage from "@/components/logoImage";
 import { usePathname } from "next/navigation";
 import Navbar from "./navbar";
-import Footer from "./footer";
 
 type Props = {
   children: React.ReactNode;

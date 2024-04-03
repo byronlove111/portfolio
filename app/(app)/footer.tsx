@@ -1,4 +1,4 @@
-import LogoImage from "./logoImage";
+import LogoImage from "../../components/logoImage";
 
 export default function Footer() {
   return (
