@@ -1,9 +1,10 @@
+import Paragraph from "@/components/paragraph";
+import Separator from "@/components/separator";
 import Slider from "@/components/slider";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { inter, playfair } from "../fonts";
-import Separator from "@/components/separator";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
           asChild
         >
           <Link href="https://calendly.com/fr" target="_blank">
-            book a free call <ArrowUpRight size={24} />
+            book a free call <ArrowUpRight />
           </Link>
         </Button>
       </div>
@@ -55,11 +56,19 @@ export default function Home() {
           <span className={`${inter.className} font-bold`}> Paris</span>
         </h2>
       </div>
-      <hr className="border-primary mt-16" />
+      <Separator />
       <Slider />
       <div className="gap-64 w-full mt-40 md:mt-64 lg:mt-72 xl:mt-[340px]">
         <Separator reverse={false} link="/howiwork" text="how i work" />
       </div>
+      <div className="w-11/12 mb-24">
+        <Paragraph />
+      </div>
+      <Separator reverse={true} text="all my projects" link="/selectedworks" />
+      <div className="mt-64">c</div>
+      <div className="mt-64">c</div>
+      <div className="mt-64">c</div>
+      <div className="mt-64">c</div>
       <div className="mt-64">c</div>
     </div>
   );
