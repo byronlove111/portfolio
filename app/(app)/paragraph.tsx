@@ -8,19 +8,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import { motion, useScroll } from "framer-motion";
 import { CalendarDays } from "lucide-react";
 import { useRef } from "react";
-import { inter, playfair } from "../app/fonts";
+import { inter, playfair } from "../fonts";
 
 const Div1 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
   return (
     <>
       <motion.div
         ref={element}
-        className={`${playfair.className} text-lg mb-12 sm:text-3xl mt-24 lg:mb-0 lg:text-[42px] text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${playfair.className} text-lg mb-12 sm:text-3xl mt-24 lg:mb-36 lg:text-[42px] text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
         <p>
@@ -48,9 +48,7 @@ const Div1 = () => {
                   <h4 className="text-sm font-semibold">
                     Abd'al-Malik Bourassi
                   </h4>
-                  <p className="text-sm">
-                    Front-end React developer, living in Paris.
-                  </p>
+                  <p className="text-sm">21 y/o developer, living in Paris.</p>
                   <div className="flex items-center pt-2">
                     <CalendarDays className="mr-2 h-4 w-4" />{" "}
                     <span className="text-xs text-muted-foreground ">
@@ -73,14 +71,14 @@ const Div2 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
 
   return (
     <>
       <motion.div
         ref={element}
-        className={`${playfair.className} text-lg mb-12 sm:text-3xl  lg:mb-0 lg:text-[42px] text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${playfair.className} text-lg mb-12 sm:text-3xl  lg:mb-36 lg:text-[42px] text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
         My collaborations with businesses and freelancers aim to deliver
@@ -98,14 +96,14 @@ const Div3 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
 
   return (
     <>
       <motion.div
         ref={element}
-        className={`${playfair.className} text-lg  sm:text-3xl lg:text-[42px] text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${playfair.className} text-lg  sm:text-3xl lg:text-[42px] text-primary lg:mt-32 lg:mb-36 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
         But don't just take my words for it, see what
@@ -120,14 +118,14 @@ const Div4 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
 
   return (
     <>
       <motion.div
         ref={element}
-        className={`${inter.className} gap-4 text-sm mb-16 mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${inter.className} gap-4 text-sm  mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
         <p className="lg:w-11/12">
@@ -151,14 +149,14 @@ const Div5 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
 
   return (
     <>
       <motion.div
         ref={element}
-        className={`${inter.className} gap-4 text-sm mb-16 mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${inter.className} gap-4 text-sm mb-16 mt-12 lg:mb-36 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
         <p className="lg:w-11/12">
@@ -180,7 +178,7 @@ const Div6 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
 
   return (
@@ -206,28 +204,28 @@ const Div7 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start start", "start 0.15"],
+    offset: ["start 0.8", "start 0.6"],
   });
 
   return (
     <>
       <motion.div
         ref={element}
-        className={`${inter.className} flex justify-between text-xs md:text-sm mb-16 mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
+        className={`${inter.className} flex justify-between text-xs md:text-sm mt-12 lg:mb-0 lg:text-xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-4 md:gap-6">
           <li>React</li>
           <li>NextJS</li>
           <li>Typescript</li>
           <li>Tailwind</li>
         </ul>
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-4 md:gap-6">
           <li>Node</li>
           <li>Express</li>
           <li>MongoDB</li>
         </ul>
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-4 md:gap-6">
           <li>Vercel</li>
           <li>Photoshop</li>
           <li>Figma</li>
@@ -239,7 +237,7 @@ const Div7 = () => {
 
 const Paragraph = () => {
   return (
-    <>
+    <div className="flex flex-col">
       <Div1 />
       <Div2 />
       <Div3 />
@@ -247,7 +245,7 @@ const Paragraph = () => {
       <Div5 />
       <Div6 />
       <Div7 />
-    </>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import Paragraph from "@/components/paragraph";
+import Paragraph from "@/app/(app)/paragraph";
 import Separator from "@/components/separator";
 import Slider from "@/components/slider";
 import { Button } from "@/components/ui/button";

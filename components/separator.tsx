@@ -4,11 +4,11 @@ import { Button } from "./ui/button";
 
 type SeparatorProps = { reverse?: boolean; text?: string; link?: string };
 
-const Separator = ({ reverse, text, link }: SeparatorProps) => {
+const Separator = ({ reverse = true, text, link }: SeparatorProps) => {
   if (text) {
     return (
       <div
-        className={`md:flex md:${
+        className={`md:flex ${
           reverse ? "flex-row" : "flex-row-reverse"
         } items-center gap-32 lg:gap-64`}
       >
