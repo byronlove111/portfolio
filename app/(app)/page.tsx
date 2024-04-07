@@ -70,7 +70,7 @@ export default function Home() {
         selected works - <span className="font-bold">2024</span>
       </p>
       <Work display="selected" />
-      <div className="mt-28 mb-10 md:mb-28">
+      <div className="mt-20 mb-10 md:mb-20">
         <Separator
           text="book a free call"
           link="https://calendly.com/fr"
