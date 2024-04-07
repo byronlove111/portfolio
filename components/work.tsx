@@ -20,7 +20,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.1"],
+    offset: ["start 0.8", display === "selected" ? "start 0.1" : "start 0.3"],
   });
   const work = works.find((work) => work.id === id);
   if (!work) {
@@ -107,7 +107,7 @@ const Work = ({ display }: WorkProps) => {
         const element = useRef(null);
         const { scrollYProgress } = useScroll({
           target: element,
-          offset: ["start 0.8", "start 0.1"],
+          offset: ["start 0.8", "start 0.6"],
         });
         return (
           <div
