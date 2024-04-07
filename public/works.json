@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Kasa",
+    "link": "https://maliksynt-kasa.vercel.app/",
+    "github": "https://github.com/maliksynt/Kasa",
+    "cover": "/images/Kasa/CoverImage.jpg",
+    "video": "/videos/montagne.mp4",
+    "photos": ["./images/Kasa/Photo1"],
+    "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+    "technologies": ["React", "Responsive Design", "SASS"],
+    "features": ["Gestion des routes", "Affichage des détails d'un logement"],
+    "homepage": true
+  },
+  {
+    "id": 2,
+    "name": "Mon vieux grimoire",
+    "link": "https://maliksynt-kasa.vercel.app/",
+    "github": "https://github.com/maliksynt/Kasa",
+    "cover": "/images/Kasa/CoverImage.jpg",
+    "video": "/videos/aurore.mp4",
+    "photos": ["/images/Kasa/Photo1"],
+    "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+    "technologies": ["React", "Responsive Design", "SASS"],
+    "features": ["Gestion des routes", "Affichage des détails d'un logement"],
+    "homepage": false
+  },
+  {
+    "id": 3,
+    "name": "Alexis Portfolio",
+    "link": "https://maliksynt-kasa.vercel.app/",
+    "github": "https://github.com/maliksynt/Kasa",
+    "cover": "/images/Kasa/CoverImage.jpg",
+    "video": "/videos/avion.mp4",
+    "photos": ["/images/Kasa/Photo1"],
+    "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+    "technologies": ["React", "Responsive Design", "SASS"],
+    "features": ["Gestion des routes", "Affichage des détails d'un logement"],
+    "homepage": true
+  }
+]

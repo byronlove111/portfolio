@@ -23,7 +23,7 @@ const Div1 = () => {
         className={`${playfair.className} text-lg mb-12 sm:text-3xl mt-24 lg:mb-36 lg:text-[42px] text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
-        <p>
+        <div>
           <HoverCard>
             <HoverCardTrigger asChild>
               <span
@@ -61,7 +61,7 @@ const Div1 = () => {
           </HoverCard>
           , I craft smooth and engaging user experiences by harnessing the
           latest technological advancements in web development.
-        </p>
+        </div>
       </motion.div>
     </>
   );

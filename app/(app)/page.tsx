@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { inter, playfair } from "../fonts";
+import Work from "@/components/work";
 
 export default function Home() {
   return (
@@ -65,11 +66,18 @@ export default function Home() {
         <Paragraph />
       </div>
       <Separator reverse={true} text="all my projects" link="/selectedworks" />
-      <div className="mt-64">c</div>
-      <div className="mt-64">c</div>
-      <div className="mt-64">c</div>
-      <div className="mt-64">c</div>
-      <div className="mt-64">c</div>
+      <p className="mt-16 mb-4 text-primary">
+        selected works - <span className="font-bold">2024</span>
+      </p>
+      <Work display="selected" />
+      <div className="mt-28 mb-28">
+        <Separator
+          text="book a free call"
+          link="https://calendly.com/fr"
+          reverse={false}
+          targetBlank={true}
+        />
+      </div>
     </div>
   );
 }

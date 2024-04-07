@@ -3,6 +3,7 @@
 import LogoImage from "@/components/logoImage";
 import { usePathname } from "next/navigation";
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 type Props = {
   children: React.ReactNode;
@@ -20,10 +21,10 @@ const Layout = ({ children }: Props) => {
             <LogoImage location="header" />
           </div>
         )}
-        <Navbar location={pathname} />
+        <Navbar pathname={pathname} />
         <div>{children}</div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

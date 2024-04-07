@@ -2,9 +2,19 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-type SeparatorProps = { reverse?: boolean; text?: string; link?: string };
+type SeparatorProps = {
+  reverse?: boolean;
+  text?: string;
+  link?: string;
+  targetBlank?: boolean;
+};
 
-const Separator = ({ reverse = true, text, link }: SeparatorProps) => {
+const Separator = ({
+  reverse = true,
+  text,
+  link,
+  targetBlank,
+}: SeparatorProps) => {
   if (text) {
     return (
       <div
@@ -20,6 +30,7 @@ const Separator = ({ reverse = true, text, link }: SeparatorProps) => {
           <Link
             href={link ? link : "/"}
             className="flex gap-2 items-center justify-between w-full md:w-52 md:justify-center"
+            target={targetBlank ? "_blank" : "_self"}
           >
             {text} <ArrowUpRight />
           </Link>
