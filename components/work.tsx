@@ -8,15 +8,15 @@ import { useRef } from "react";
 import works from "../public/works.json";
 import { Button } from "./ui/button";
 
-type WorkProps = {
+interface WorkProps {
   display: "selected" | "all";
-};
+}
 
-type WorkComponentProps = {
+interface WorkComponentProps extends WorkProps {
   id: number;
-};
+}
 
-const WorkComponent = ({ id }: WorkComponentProps) => {
+const WorkComponent = ({ id, display }: WorkComponentProps) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
@@ -35,7 +35,9 @@ const WorkComponent = ({ id }: WorkComponentProps) => {
             muted
             loop
             autoPlay
-            className="w-screen h-[500px] object-cover overflow-hidden rounded-[20px] md:h-[600px] lg:h-[700px] xl:h-[800px]"
+            className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
+              display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
+            } xl:h-[${display === "all" ? "600px" : "800px"}]`}
           ></video>
           <Image
             src={work.cover}
@@ -56,27 +58,31 @@ const WorkComponent = ({ id }: WorkComponentProps) => {
             }}
           />
         </Link>
-        <div className="flex w-full justify-between items-baseline text-primary font-semibold">
-          <div className="font-bold">{work.name}</div>
-          <div className="flex gap-6 text-sm">
-            {work.technologies.map((techno, index) => (
-              <p className="hidden lg:flex" key={`${id}-${index}`}>
-                {techno}
-              </p>
-            ))}
+        {display === "selected" ? (
+          <div className="flex w-full justify-between items-baseline text-primary font-semibold">
+            <div className="font-bold">{work.name}</div>
+            <div className="flex gap-6 text-sm justify-center">
+              {work.technologies
+                .map((techno, index) => (
+                  <p className="hidden lg:flex" key={`${id}-${index}`}>
+                    {techno}
+                  </p>
+                ))
+                .splice(0, 4)}
+            </div>
+            <div>
+              <Link href={`/selectedworks/${work.id}`}>
+                <Button
+                  variant="linkBold"
+                  size="transparent"
+                  className="flex gap-2"
+                >
+                  view project <ArrowUpRight />
+                </Button>
+              </Link>
+            </div>
           </div>
-          <div>
-            <Link href={`/selectedworks/${work.id}`}>
-              <Button
-                variant="linkBold"
-                size="transparent"
-                className="flex gap-2"
-              >
-                view project <ArrowUpRight />
-              </Button>
-            </Link>
-          </div>
-        </div>
+        ) : null}
       </div>
     </motion.div>
   );
@@ -87,13 +93,66 @@ const Work = ({ display }: WorkProps) => {
   if (display === "selected") {
     const work = works.filter((work) => work.homepage === true);
     workDisplayed = work ? (
-      work.map((work) => <WorkComponent id={work.id} key={work.id} />).reverse()
+      work
+        .map((work) => (
+          <WorkComponent id={work.id} key={work.id} display={display} />
+        ))
+        .reverse()
     ) : (
       <div>Work not found</div>
     );
   } else if (display === "all") {
     workDisplayed = works
-      .map((work) => <WorkComponent id={work.id} key={work.id} />)
+      .map((work) => {
+        const element = useRef(null);
+        const { scrollYProgress } = useScroll({
+          target: element,
+          offset: ["start 0.8", "start 0.1"],
+        });
+        return (
+          <div
+            className="flex flex-col-reverse lg:flex-row justify-between mb-12"
+            key={work.id}
+          >
+            <motion.div ref={element} style={{ opacity: scrollYProgress }}>
+              <div className="text-primary flex flex-col justify-start h-full pb-12">
+                <Link href={`/selectedworks/${work.id}`}>
+                  <h2 className={"font-bold text-2xl"}>{work.name}</h2>
+                </Link>
+                <h3 className="text-sm mt-6 md:mt-12">technologies_</h3>
+                <ul className="mt-2">
+                  {work.technologies
+                    .map((techno, index) => (
+                      <li className="font-bold text-sm" key={index}>
+                        {techno}
+                      </li>
+                    ))
+                    .splice(0, 5)}
+                </ul>
+                <h3 className="text-sm mt-4 md:mt-8">features_</h3>
+                <ul className="mt-2">
+                  {work.features
+                    .map((feature, index) => (
+                      <li className="font-bold text-sm" key={index}>
+                        {feature}
+                      </li>
+                    ))
+                    .splice(0, 5)}
+                </ul>
+                <Link
+                  href={`/selectedworks/${work.id}`}
+                  className="flex gap-2 mt-8 md:mt-16 hover:underline underline-offset-4"
+                >
+                  view project <ArrowUpRight />
+                </Link>
+              </div>
+            </motion.div>
+            <div className="lg:w-6/12 xl:w-8/12">
+              <WorkComponent id={work.id} key={work.id} display={display} />
+            </div>
+          </div>
+        );
+      })
       .reverse();
   }
 

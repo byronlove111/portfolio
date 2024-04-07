@@ -8,7 +8,7 @@
     "video": "/videos/montagne.mp4",
     "photos": ["./images/Kasa/Photo1"],
     "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-    "technologies": ["React", "Responsive Design", "SASS"],
+    "technologies": ["React", "SASS"],
     "features": ["Gestion des routes", "Affichage des détails d'un logement"],
     "homepage": true
   },
@@ -21,8 +21,8 @@
     "video": "/videos/aurore.mp4",
     "photos": ["/images/Kasa/Photo1"],
     "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-    "technologies": ["React", "Responsive Design", "SASS"],
-    "features": ["Gestion des routes", "Affichage des détails d'un logement"],
+    "technologies": ["NodeJS", "Express", "MongoDB"],
+    "features": ["CRUD", "Affichage des détails d'un logement"],
     "homepage": false
   },
   {
@@ -34,7 +34,7 @@
     "video": "/videos/avion.mp4",
     "photos": ["/images/Kasa/Photo1"],
     "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-    "technologies": ["React", "Responsive Design", "SASS"],
+    "technologies": ["NextJS", "Typescript", "Framer-motion"],
     "features": ["Gestion des routes", "Affichage des détails d'un logement"],
     "homepage": true
   }

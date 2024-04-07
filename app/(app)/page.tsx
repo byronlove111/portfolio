@@ -65,9 +65,9 @@ export default function Home() {
       <div className="w-11/12 mb-24">
         <Paragraph />
       </div>
-      <Separator reverse={true} text="all my projects" link="/selectedworks" />
+      <Separator reverse={true} text="selected works" link="/selectedworks" />
       <p className="mt-16 mb-4 text-primary">
-        selected works - <span className="font-bold">2024</span>
+        favourites works - <span className="font-bold">2024</span>
       </p>
       <Work display="selected" />
       <div className="mt-20 mb-10 md:mb-20">
