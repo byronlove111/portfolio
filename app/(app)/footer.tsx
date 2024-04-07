@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-primary h-[820px] flex flex-col items-center justify-between relative">
-      <div className="flex flex-col-reverse md:flex-row text-background w-9/12  gap-16 md:gap-64 mt-40">
-        <ul className="flex flex-col gap-6">
+    <div className="w-full bg-primary flex flex-col items-center justify-between relative">
+      <div className="flex flex-col-reverse md:flex-row text-background w-9/12  gap-16 md:gap-64 mt-16  mb-12 md:mt-40 md:mb-40">
+        <ul className="flex flex-col gap-2 lg:gap-6">
           <li className="font-bold">contact</li>
           <li>
             {" "}
@@ -54,7 +54,7 @@ export default function Footer() {
             designed and developed by me
           </li>
         </ul>
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-2 lg:gap-6">
           <li className="font-bold">navigation</li>
           <li>
             {" "}
