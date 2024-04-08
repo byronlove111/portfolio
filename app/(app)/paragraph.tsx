@@ -14,7 +14,7 @@ const Div1 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
   return (
     <>
@@ -71,7 +71,7 @@ const Div2 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
 
   return (
@@ -96,7 +96,7 @@ const Div3 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
 
   return (
@@ -118,7 +118,7 @@ const Div4 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
 
   return (
@@ -149,7 +149,7 @@ const Div5 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
 
   return (
@@ -178,7 +178,7 @@ const Div6 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
 
   return (
@@ -204,7 +204,7 @@ const Div7 = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.6"],
+    offset: ["start 0.8", "start 0.7"],
   });
 
   return (
