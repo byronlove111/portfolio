@@ -12,8 +12,8 @@ export default function LogoImage({ location, theme }: Logo) {
         <Image
           src={
             location === "header"
-              ? "images/MainLogoHeader.svg"
-              : "images/MainLogoFooter.svg"
+              ? "/images/MainLogoHeader.svg"
+              : "/images/MainLogoFooter.svg"
           }
           alt="Logo"
           sizes="100vw"

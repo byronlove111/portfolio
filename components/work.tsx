@@ -20,7 +20,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", display === "selected" ? "start 0.1" : "start 0.3"],
+    offset: ["start 0.8", "start 0.3"],
   });
   const work = works.find((work) => work.id === id);
   if (!work) {
@@ -141,7 +141,7 @@ const Work = ({ display }: WorkProps) => {
                 </ul>
                 <Link
                   href={`/selectedworks/${work.id}`}
-                  className="flex gap-2 mt-8 md:mt-16 hover:underline underline-offset-4"
+                  className="flex gap-2 mt-8 md:mt-16 hover:underline underline-offset-4 font-bold"
                 >
                   view project <ArrowUpRight />
                 </Link>

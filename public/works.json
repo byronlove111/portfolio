@@ -6,8 +6,16 @@
     "github": "https://github.com/maliksynt/Kasa",
     "cover": "/images/Kasa/CoverImage.jpg",
     "video": "/videos/montagne.mp4",
-    "photos": ["./images/Kasa/Photo1"],
-    "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+    "photos": [
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/CoverImage.jpg"
+    ],
+    "description": [
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React."
+    ],
     "technologies": ["React", "SASS"],
     "features": ["Gestion des routes", "Affichage des détails d'un logement"],
     "homepage": true
@@ -19,8 +27,16 @@
     "github": "https://github.com/maliksynt/Kasa",
     "cover": "/images/Kasa/CoverImage.jpg",
     "video": "/videos/aurore.mp4",
-    "photos": ["/images/Kasa/Photo1"],
-    "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+    "photos": [
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/CoverImage.jpg"
+    ],
+    "description": [
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React."
+    ],
     "technologies": ["NodeJS", "Express", "MongoDB"],
     "features": ["CRUD", "Affichage des détails d'un logement"],
     "homepage": false
@@ -32,8 +48,25 @@
     "github": "https://github.com/maliksynt/Kasa",
     "cover": "/images/Kasa/CoverImage.jpg",
     "video": "/videos/avion.mp4",
-    "photos": ["/images/Kasa/Photo1"],
-    "description": "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+    "photos": [
+      "/images/Kasa/CoverImage.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/CoverImage.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/CoverImage.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg",
+      "/images/Kasa/Photo1.jpg"
+    ],
+    "description": [
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
+      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React."
+    ],
     "technologies": ["NextJS", "Typescript", "Framer-motion"],
     "features": ["Gestion des routes", "Affichage des détails d'un logement"],
     "homepage": true
