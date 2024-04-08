@@ -18,14 +18,14 @@ export default function SelectedWork({
   }
   return (
     <>
-      <div className="flex flex-col w-full mt-32">
+      <div className="flex flex-col w-full mt-12 lg:mt-32">
         <h2
-          className={`${oswald.className} text-6xl font-bold text-primary uppercase`}
+          className={`${oswald.className} text-4xl lg:text-6xl font-bold text-primary uppercase`}
         >
           {work.name}
         </h2>
-        <div className="flex w-full mb-16">
-          <div className="text-primary flex flex-col min-w-[450px]">
+        <div className="flex flex-col lg:flex-row w-full mb-16">
+          <div className="text-primary flex flex-col lg:min-w-[450px]">
             <h3 className="text-sm mt-6 md:mt-20">technologies_</h3>
             <ul className="mt-2">
               {work.technologies.map((techno, index) => (
@@ -56,7 +56,7 @@ export default function SelectedWork({
               </li>
             </ul>
           </div>
-          <div className="pt-20 text-primary  flex flex-col gap-10 font-medium">
+          <div className="pt-20 text-primary  flex flex-col gap-10 font-medium text-sm md:text-base">
             {work.description.map((descr, index) => (
               <p key={index} style={{ textIndent: "3em" }}>
                 {descr}
@@ -74,9 +74,9 @@ export default function SelectedWork({
           link="https://calendly.com/fr"
         />
       </div>
-      <div className="mt-32 flex flex-wrap w-full justify-between">
+      <div className=" mt-10 lg:mt-32 flex flex-wrap w-full gap-4 justify-end">
         {work.photos.map((image, index) => (
-          <div className="mt-4" key={index}>
+          <div className="mt-2" key={index}>
             <Image
               quality={100}
               src={image}
@@ -85,14 +85,14 @@ export default function SelectedWork({
               style={{
                 width: "100%",
                 height: "100%",
-                borderRadius: "20px",
+                borderRadius: "15px",
               }}
               alt={work.name}
             />
           </div>
         ))}
       </div>
-      <div className="mt-20 mb-20">
+      <div className="mt-10 lg:mt-32 mb-16 lg:mb-32">
         <Separator
           reverse={true}
           text="let's talk"
