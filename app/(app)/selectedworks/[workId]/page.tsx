@@ -74,7 +74,7 @@ export default function SelectedWork({
           link="https://calendly.com/fr"
         />
       </div>
-      <div className=" mt-10 lg:mt-32 flex flex-wrap w-full gap-4 justify-end">
+      <div className=" mt-10 lg:mt-32 flex flex-wrap w-full gap-4 justify-center md:justify-end">
         {work.photos.map((image, index) => (
           <div className="mt-2" key={index}>
             <Image
