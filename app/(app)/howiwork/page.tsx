@@ -6,7 +6,7 @@ export default function MyApproach() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 768"
-            className="mx-auto h-56 w-auto text-black sm:h-64"
+            className="mx-auto h-56 w-auto text-primary sm:h-64"
           >
             <g fill="none" fillRule="evenodd">
               <g fill="#FF5678">
@@ -22,7 +22,7 @@ export default function MyApproach() {
             </g>
           </svg>
 
-          <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 className="mt-6 text-2xl font-bold tracking-tight text-primary sm:text-4xl">
             Uh-oh!
           </h1>
 

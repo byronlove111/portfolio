@@ -17,7 +17,7 @@ export default function SelectedWorks() {
       <Separator />
       <Slider />
       <div className="gap-64 w-full mt-40 md:mt-64 lg:mt-72 xl:mt-[340px] mb-24">
-        <Separator reverse={true} link="/" text="let's talk" />
+        <Separator reverse={false} link="/" text="let's talk" />
       </div>
     </>
   );

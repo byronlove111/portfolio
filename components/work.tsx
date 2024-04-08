@@ -20,7 +20,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start 0.3"],
+    offset: ["start 0.8", "start 0.5"],
   });
   const work = works.find((work) => work.id === id);
   if (!work) {
@@ -117,7 +117,7 @@ const Work = ({ display }: WorkProps) => {
             <motion.div ref={element} style={{ opacity: scrollYProgress }}>
               <div className="text-primary flex flex-col justify-start h-full pb-12">
                 <Link href={`/selectedworks/${work.id}`}>
-                  <h2 className={"font-bold text-2xl"}>{work.name}</h2>
+                  <h2 className={"font-bold text-3xl"}>{work.name}_</h2>
                 </Link>
                 <h3 className="text-sm mt-6 md:mt-12">technologies_</h3>
                 <ul className="mt-2">
