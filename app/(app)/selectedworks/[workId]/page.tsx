@@ -1,9 +1,9 @@
 import { oswald } from "@/app/fonts";
+import ErrorComponent from "@/components/error";
 import Separator from "@/components/separator";
 import Image from "next/image";
 import Link from "next/link";
 import works from "../../../../public/works.json";
-import ErrorComponent from "@/components/error";
 
 export default function SelectedWork({
   params,

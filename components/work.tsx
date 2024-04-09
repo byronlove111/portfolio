@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense, useRef } from "react";
+import { useRef } from "react";
 import works from "../public/works.json";
 import { Button } from "./ui/button";
 

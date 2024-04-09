@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import LogoImage from "../../components/logoImage";
 import Link from "next/link";
+import LogoImage from "../../components/logoImage";
 
 export default function Footer() {
   return (

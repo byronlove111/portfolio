@@ -2,8 +2,8 @@
 
 import LogoImage from "@/components/logoImage";
 import { usePathname } from "next/navigation";
-import Navbar from "./navbar";
 import Footer from "./footer";
+import Navbar from "./navbar";
 
 type Props = {
   children: React.ReactNode;

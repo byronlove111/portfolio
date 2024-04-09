@@ -1,5 +1,5 @@
 import ErrorComponent from "@/components/error";
-import { ArrowRightIcon, ArrowUpRightIcon } from "lucide-react";
+import { ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function NotFound() {
