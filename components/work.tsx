@@ -23,6 +23,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
     offset: ["start 0.8", "start 0.5"],
   });
   const work = works.find((work) => work.id === id);
+
   if (!work) {
     return <div>work not found</div>;
   }
@@ -31,14 +32,16 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
       <div className="relative flex justify-center flex-col mb-12">
         <Link href={`/selectedworks/${work.id}`}>
           <video
-            src={work.video}
+            playsInline={true}
             muted
             loop
             autoPlay
             className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
               display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
             } xl:h-[${display === "all" ? "600px" : "800px"}]`}
-          ></video>
+          >
+            <source src={work.video} type="video/mp4" />
+          </video>
           <Image
             src={work.cover}
             layout="responsive"
@@ -102,6 +105,7 @@ const Work = ({ display }: WorkProps) => {
       <div>Work not found</div>
     );
   } else if (display === "all") {
+    // Display all works page
     workDisplayed = works
       .map((work) => {
         const element = useRef(null);
