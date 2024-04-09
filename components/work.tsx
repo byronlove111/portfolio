@@ -39,7 +39,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
         <Link href={`/selectedworks/${work.id}`}>
           <video
             playsInline={true}
-            preload="auto"
+            preload="metadata"
             loop
             autoPlay
             className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
