@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Link } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { inter, playfair } from "../fonts";
 
