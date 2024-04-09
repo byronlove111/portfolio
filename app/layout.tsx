@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Abd'Al-Malik Bourassi",
   description: "Front-end developer portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -20,4 +23,3 @@ export default function RootLayout({
     </html>
   );
 }
- 
