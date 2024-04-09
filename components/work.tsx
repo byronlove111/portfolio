@@ -34,6 +34,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
           <video
             playsInline={true}
             muted
+            preload="auto"
             loop
             autoPlay
             className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
