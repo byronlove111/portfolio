@@ -4,10 +4,9 @@ import { motion, useScroll } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 import works from "../public/works.json";
 import { Button } from "./ui/button";
-import AutoPlaySilentVideo from "@/lib/mutedVideo";
 
 interface WorkProps {
   display: "selected" | "all";
@@ -16,6 +15,12 @@ interface WorkProps {
 interface WorkComponentProps extends WorkProps {
   id: number;
 }
+
+const FallbackSpinner = () => (
+  <div className="flex justify-center items-center h-[500px]">
+    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+  </div>
+);
 
 const WorkComponent = ({ id, display }: WorkComponentProps) => {
   const element = useRef(null);
@@ -41,14 +46,9 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
               display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
             } xl:h-[${display === "all" ? "600px" : "800px"}]`}
           >
-            <source src={work.video} type="video/mp4" />
+            <source src={work.video} type="video/webm" />
+            Your browser does not support the video tag.
           </video>
-          {/* <AutoPlaySilentVideo
-            video={work.video}
-            className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
-              display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
-            } xl:h-[${display === "all" ? "600px" : "800px"}]`}
-          /> */}
           <Image
             src={work.cover}
             layout="responsive"
