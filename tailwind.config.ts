@@ -21,6 +21,7 @@ const config = {
       colors: {
         background: "#F6F2EA",
         primary: "#E75D50",
+        browny: "#8A6255",
       },
       borderRadius: {
         lg: "var(--radius)",

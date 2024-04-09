@@ -15,7 +15,7 @@ const buttonVariants = cva(
         linkBold:
           "text-primary font-bold hover:scale-110 transition-transform duration-300",
         smallButton:
-          "bg-background text-primary border-[1px] font-normal border-primary hover:bg-primary hover:text-background",
+          "bg-background text-primary border-[1px] font-normal border-primary",
       },
       size: {
         default: "h-10 px-6 py-2 min-w-40",

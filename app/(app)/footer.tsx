@@ -16,7 +16,7 @@ export default function Footer() {
               className="text-background bg-primary"
               asChild
             >
-              <Link href="https://github.com/maliksynt" target="_blank">
+              <Link href="mailto:abdalmalikbourassi@gmail.com" target="_blank">
                 abdalmalikbourassi@gmail.com
               </Link>
             </Button>

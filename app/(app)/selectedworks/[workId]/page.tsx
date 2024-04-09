@@ -3,6 +3,7 @@ import Separator from "@/components/separator";
 import Image from "next/image";
 import Link from "next/link";
 import works from "../../../../public/works.json";
+import ErrorComponent from "@/components/error";
 
 export default function SelectedWork({
   params,
@@ -14,7 +15,7 @@ export default function SelectedWork({
   const work = works.find((work) => work.id === Number(params.workId));
 
   if (!work) {
-    return <div>Work not found</div>;
+    return <ErrorComponent text="Work not found" />;
   }
   return (
     <>
