@@ -46,25 +46,25 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
               <source src={work.videomp4} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <Image
+              src={work.cover}
+              layout="responsive"
+              height={800}
+              width={1000}
+              alt="cover image"
+              quality={85}
+              style={{
+                zIndex: "10",
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                height: "auto",
+                maxWidth: "80%",
+                minWidth: "275px",
+              }}
+            />
           </Suspense>
-          <Image
-            src={work.cover}
-            layout="responsive"
-            height={800}
-            width={1000}
-            alt="cover image"
-            quality={85}
-            style={{
-              zIndex: "10",
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              height: "auto",
-              maxWidth: "80%",
-              minWidth: "275px",
-            }}
-          />
         </Link>
         {display === "selected" ? (
           <div className="flex w-full justify-between items-baseline text-primary font-semibold">
