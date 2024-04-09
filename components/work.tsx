@@ -47,6 +47,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
             } xl:h-[${display === "all" ? "600px" : "800px"}]`}
           >
             <source src={work.video} type="video/webm" />
+            <source src={work.videomp4} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <Image

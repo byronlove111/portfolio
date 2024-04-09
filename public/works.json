@@ -6,6 +6,7 @@
     "github": "https://github.com/maliksynt/Kasa",
     "cover": "/images/Kasa/CoverImage.jpg",
     "video": "/videos/montagne.webm",
+    "videomp4": "/videos/montagne.mp4",
     "photos": [
       "/images/Kasa/Photo1.jpg",
       "/images/Kasa/Photo1.jpg",
@@ -27,6 +28,7 @@
     "github": "https://github.com/maliksynt/Kasa",
     "cover": "/images/Kasa/CoverImage.jpg",
     "video": "/videos/aurore.webm",
+    "videomp4": "/videos/aurore.mp4",
     "photos": [
       "/images/Kasa/Photo1.jpg",
       "/images/Kasa/Photo1.jpg",
@@ -48,6 +50,7 @@
     "github": "https://github.com/maliksynt/Kasa",
     "cover": "/images/Kasa/CoverImage.jpg",
     "video": "/videos/avion.webm",
+    "videomp4": "/videos/avion.mp4",
     "photos": [
       "/images/Kasa/CoverImage.jpg",
       "/images/Kasa/Photo1.jpg",
