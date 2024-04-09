@@ -5,6 +5,8 @@ import Separator from "@/components/separator";
 import Slider from "@/components/slider";
 import Work from "@/components/work";
 import Landing from "./landing";
+import FallbackSpinner from "@/components/fallbackSpinner";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -22,7 +24,9 @@ export default function Home() {
       <p className="mt-16 mb-4 text-primary">
         favourites works - <span className="font-bold">2024</span>
       </p>
-      <Work display="selected" />
+      <Suspense fallback={<FallbackSpinner />}>
+        <Work display="selected" />
+      </Suspense>
       <div className="mt-20 mb-10 md:mb-20">
         <Separator
           text="book a free call"

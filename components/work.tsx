@@ -16,12 +16,6 @@ interface WorkComponentProps extends WorkProps {
   id: number;
 }
 
-const FallbackSpinner = () => (
-  <div className="flex justify-center items-center h-[500px]">
-    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
-  </div>
-);
-
 const WorkComponent = ({ id, display }: WorkComponentProps) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({

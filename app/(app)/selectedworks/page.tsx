@@ -1,6 +1,8 @@
+import FallbackSpinner from "@/components/fallbackSpinner";
 import Separator from "@/components/separator";
 import Slider from "@/components/slider";
 import Work from "@/components/work";
+import { Suspense } from "react";
 
 export default function SelectedWorks() {
   return (
@@ -12,7 +14,9 @@ export default function SelectedWorks() {
         <div className="mb-20 mt-[-50px]">
           <Separator />
         </div>
-        <Work display="all" />
+        <Suspense fallback={<FallbackSpinner />}>
+          <Work display="all" />
+        </Suspense>
       </div>
       <Separator />
       <Slider />
