@@ -4,9 +4,10 @@ import { motion, useScroll } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 import works from "../public/works.json";
 import { Button } from "./ui/button";
+import FallbackSpinner from "./fallbackSpinner";
 
 interface WorkProps {
   display: "selected" | "all";
@@ -28,68 +29,70 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
     return <div>work not found</div>;
   }
   return (
-    <motion.div ref={element} style={{ opacity: scrollYProgress }}>
-      <div className="relative flex justify-center flex-col mb-12">
-        <Link href={`/selectedworks/${work.id}`}>
-          <video
-            playsInline={true}
-            preload="metadata"
-            loop
-            autoPlay
-            className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
-              display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
-            } xl:h-[${display === "all" ? "600px" : "800px"}]`}
-          >
-            <source src={work.video} type="video/webm" />
-            <source src={work.videomp4} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Image
-            src={work.cover}
-            layout="responsive"
-            height={800}
-            width={1000}
-            alt="cover image"
-            quality={85}
-            style={{
-              zIndex: "10",
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              height: "auto",
-              maxWidth: "80%",
-              minWidth: "275px",
-            }}
-          />
-        </Link>
-        {display === "selected" ? (
-          <div className="flex w-full justify-between items-baseline text-primary font-semibold">
-            <div className="font-bold">{work.name}</div>
-            <div className="flex gap-6 text-sm justify-center">
-              {work.technologies
-                .map((techno, index) => (
-                  <p className="hidden lg:flex" key={`${id}-${index}`}>
-                    {techno}
-                  </p>
-                ))
-                .splice(0, 4)}
+    <Suspense fallback={<FallbackSpinner />}>
+      <motion.div ref={element} style={{ opacity: scrollYProgress }}>
+        <div className="relative flex justify-center flex-col mb-12">
+          <Link href={`/selectedworks/${work.id}`}>
+            <video
+              playsInline={true}
+              preload="metadata"
+              loop
+              autoPlay
+              className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
+                display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
+              } xl:h-[${display === "all" ? "600px" : "800px"}]`}
+            >
+              <source src={work.video} type="video/webm" />
+              <source src={work.videomp4} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <Image
+              src={work.cover}
+              layout="responsive"
+              height={800}
+              width={1000}
+              alt="cover image"
+              quality={85}
+              style={{
+                zIndex: "10",
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                height: "auto",
+                maxWidth: "80%",
+                minWidth: "275px",
+              }}
+            />
+          </Link>
+          {display === "selected" ? (
+            <div className="flex w-full justify-between items-baseline text-primary font-semibold">
+              <div className="font-bold">{work.name}</div>
+              <div className="flex gap-6 text-sm justify-center">
+                {work.technologies
+                  .map((techno, index) => (
+                    <p className="hidden lg:flex" key={`${id}-${index}`}>
+                      {techno}
+                    </p>
+                  ))
+                  .splice(0, 4)}
+              </div>
+              <div>
+                <Link href={`/selectedworks/${work.id}`}>
+                  <Button
+                    variant="linkBold"
+                    size="transparent"
+                    className="flex gap-2"
+                  >
+                    view project <ArrowUpRight />
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <div>
-              <Link href={`/selectedworks/${work.id}`}>
-                <Button
-                  variant="linkBold"
-                  size="transparent"
-                  className="flex gap-2"
-                >
-                  view project <ArrowUpRight />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        ) : null}
-      </div>
-    </motion.div>
+          ) : null}
+        </div>
+      </motion.div>
+    </Suspense>
   );
 };
 
