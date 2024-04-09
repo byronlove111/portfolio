@@ -3,7 +3,7 @@ import { inter } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Abd'Al-Malik Bourassi - Portfolio",
+  title: "Abd'Al-Malik Bourassi",
   description: "Front-end developer portfolio",
 };
 
@@ -20,3 +20,4 @@ export default function RootLayout({
     </html>
   );
 }
+ 
