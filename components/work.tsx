@@ -32,9 +32,8 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
     <motion.div ref={element} style={{ opacity: scrollYProgress }}>
       <div className="relative flex justify-center flex-col mb-12">
         <Link href={`/selectedworks/${work.id}`}>
-          {/* <video
+          <video
             playsInline={true}
-            muted
             preload="auto"
             loop
             autoPlay
@@ -43,13 +42,13 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
             } xl:h-[${display === "all" ? "600px" : "800px"}]`}
           >
             <source src={work.video} type="video/mp4" />
-          </video> */}
-          <AutoPlaySilentVideo
+          </video>
+          {/* <AutoPlaySilentVideo
             video={work.video}
             className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
               display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
             } xl:h-[${display === "all" ? "600px" : "800px"}]`}
-          />
+          /> */}
           <Image
             src={work.cover}
             layout="responsive"
