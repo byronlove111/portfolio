@@ -86,7 +86,7 @@ export default function SelectedWork({
               style={{
                 width: "100%",
                 height: "auto",
-                borderRadius: "15px",
+                borderRadius: "10px",
               }}
               alt={work.name}
             />
