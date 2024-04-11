@@ -13,7 +13,7 @@ const buttonVariants = cva(
           "bg-background text-primary border-2 border-primary hover:scale-110 transition-transform duration-300",
         link: "bg-background text-primary font-normal hover:underline underline-offset-4",
         linkBold:
-          "text-primary font-bold hover:scale-110 transition-transform duration-300",
+          "text-primary font-bold hover:scale-110 transition-transform duration-300 underline underline-offset-4",
         smallButton:
           "bg-background text-primary border-[1px] font-normal border-primary",
       },

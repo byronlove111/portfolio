@@ -43,7 +43,6 @@ const Div1 = () => {
                   />
                   <AvatarFallback>AB</AvatarFallback>
                 </Avatar>
-
                 <div className="space-y-1">
                   <h4 className="text-sm font-semibold">
                     Abd'al-Malik Bourassi

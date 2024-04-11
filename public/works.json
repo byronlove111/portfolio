@@ -8,70 +8,48 @@
     "video": "/videos/montagne.webm",
     "videomp4": "/videos/montagne.mp4",
     "photos": [
+      "/images/Kasa/FullScreen.jpeg",
       "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/CoverImage.jpg"
+      "/images/Kasa/Mobile.jpeg",
+      "/images/Kasa/Covv.jpg",
+      "/images/Kasa/appart.jpg"
     ],
     "description": [
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React."
+      "Kasa is an application for renting accommodations between individuals. It allows property owners to list their real estate for rent and tenants to find a place to rent.",
+      "The application consists of 3 pages: the homepage, the about page, and the detail page of a property. The application is responsive and was built using React with the assistance of SASS.",
+      "This project introduced me to the React framework and helped me understand how components, routes, and hooks work, particularly useState and useRef."
     ],
     "technologies": ["React", "SASS"],
-    "features": ["Gestion des routes", "Affichage des détails d'un logement"],
+    "features": ["Routing", "display details of a property"],
     "homepage": true
   },
   {
     "id": 2,
-    "name": "Mon vieux grimoire",
-    "link": "https://maliksynt-kasa.vercel.app/",
-    "github": "https://github.com/maliksynt/Kasa",
-    "cover": "/images/Kasa/CoverImage.jpg",
+    "name": "Mon Vieux Grimoire",
+    "link": null,
+    "github": "https://github.com/maliksynt/Mon-Vieux-Grimoire",
+    "cover": "/images/MonVieuxGrimoire/Cover.jpg",
     "video": "/videos/aurore.webm",
     "videomp4": "/videos/aurore.mp4",
     "photos": [
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/CoverImage.jpg"
+      "/images/MonVieuxGrimoire/allScreen.jpeg",
+      "/images/MonVieuxGrimoire/book.jpg",
+      "/images/MonVieuxGrimoire/phone.jpeg",
+      "/images/MonVieuxGrimoire/ref.jpg"
     ],
     "description": [
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React."
+      "Mon Vieux grimoire is a book listing and rating website: It allows sellers to list their books for sale and buyers to find them.",
+      "The site consists of 3 pages: the homepage, the login page, and the detail page of a book. Users can browse books for sale, rate them, and see the highest-rated books on average. They can also add a book for sale. The login is secured with JWT, and the password is hashed with bcrypt.",
+      "This project allowed me to discover backend development with Express and MongoDB. I learned how to create routes, handle requests and responses, and manipulate a NoSQL database."
     ],
-    "technologies": ["NodeJS", "Express", "MongoDB"],
-    "features": ["CRUD", "Affichage des détails d'un logement"],
-    "homepage": false
-  },
-  {
-    "id": 3,
-    "name": "Alexis Portfolio",
-    "link": "https://maliksynt-kasa.vercel.app/",
-    "github": "https://github.com/maliksynt/Kasa",
-    "cover": "/images/Kasa/CoverImage.jpg",
-    "video": "/videos/avion.webm",
-    "videomp4": "/videos/avion.mp4",
-    "photos": [
-      "/images/Kasa/CoverImage.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/CoverImage.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/CoverImage.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg",
-      "/images/Kasa/Photo1.jpg"
+    "technologies": ["Node.js", "Express", "MongoDB"],
+    "features": [
+      "CRUD",
+      "Authentification",
+      "Image optimization (multer)",
+      "Password hashing (bcrypt)",
+      "Token generation (JWT)"
     ],
-    "description": [
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React.",
-      "Kasa est une application de location de logements entre particuliers. Elle permet à des propriétaires de mettre en location leur bien immobilier et à des locataires de trouver un logement à louer. L'application est composée de 3 pages : la page d'accueil, la page de recherche et la page de détail d'un logement. L'application est responsive et a été réalisée en React."
-    ],
-    "technologies": ["NextJS", "Typescript", "Framer-motion"],
-    "features": ["Gestion des routes", "Affichage des détails d'un logement"],
     "homepage": true
   }
 ]

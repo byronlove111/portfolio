@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import LogoImage from "../../components/logoImage";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,14 +27,14 @@ export default function Footer() {
             <Button
               variant="link"
               size="transparent"
-              className="text-background bg-primary"
+              className="text-background bg-primary flex justify-start gap-2 items-center"
               asChild
             >
               <Link
                 href="https://www.linkedin.com/in/abd-al-malik-bourassi-2b4423301/"
                 target="_blank"
               >
-                linkedin
+                <Linkedin />
               </Link>
             </Button>
           </li>
@@ -42,11 +43,11 @@ export default function Footer() {
             <Button
               variant="link"
               size="transparent"
-              className="text-background bg-primary"
+              className="text-background bg-primary flex justify-start gap-2 items-center"
               asChild
             >
               <Link href="https://github.com/maliksynt" target="_blank">
-                github
+                <Github />
               </Link>
             </Button>
           </li>

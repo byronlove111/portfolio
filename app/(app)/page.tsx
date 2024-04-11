@@ -30,7 +30,7 @@ export default function Home() {
       <div className="mt-20 mb-10 md:mb-20">
         <Separator
           text="book a free call"
-          link="https://calendly.com/fr"
+          link="https://calendly.com/abdalmalikbourassi/premier-contact"
           reverse={false}
           targetBlank={true}
         />

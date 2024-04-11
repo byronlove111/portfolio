@@ -51,7 +51,10 @@ export default function Landing() {
           className="w-full flex justify-between"
           asChild
         >
-          <Link href="https://calendly.com/fr" target="_blank">
+          <Link
+            href="https://calendly.com/abdalmalikbourassi/premier-contact"
+            target="_blank"
+          >
             book a free call <ArrowUpRight />
           </Link>
         </Button>

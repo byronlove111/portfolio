@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, GithubIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,7 +46,7 @@ export default function Navbar(props?: pathnameProps) {
       <div className="hidden lg:flex gap-x-6 xl:gap-x-12">
         <Button variant="linkBold" size="transparent" asChild>
           <Link href="https://github.com/maliksynt" target="_blank">
-            github
+            <GithubIcon />
           </Link>
         </Button>
         <Button variant="linkBold" size="transparent" asChild>
@@ -54,12 +54,12 @@ export default function Navbar(props?: pathnameProps) {
             href="https://www.linkedin.com/in/abd-al-malik-bourassi-2b4423301/"
             target="_blank"
           >
-            linkedin
+            <LinkedinIcon />
           </Link>
         </Button>
         <Button variant="default" asChild>
           <Link
-            href="https://calendly.com/fr"
+            href="https://calendly.com/abdalmalikbourassi/premier-contact"
             className="flex gap-2 items-center justify-center"
             target="_blank"
           >
