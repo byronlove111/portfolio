@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Abd'Al-Malik Bourassi",
   description: "Front-end developer portfolio",
   icons: {
-    icon: "/fav.ico",
+    icon: "/favicon.ico",
   },
 };
 
