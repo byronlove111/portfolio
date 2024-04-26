@@ -127,7 +127,7 @@ const Div4 = () => {
         className={`${inter.className} gap-4 text-sm  mt-12 lg:mb-0 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
-        <p className="lg:w-11/12">
+        <p className="lg:w-11/12 leading-relaxed">
           “Malik has stood out not only for his ability to quickly grasp new
           concepts but also for his innovative spirit that adds significant
           value to every project he touches. His passion for web development and
@@ -159,7 +159,7 @@ const Div5 = () => {
         className={`${inter.className} gap-4 text-sm mb-16 mt-12 lg:mb-36 lg:text-2xl text-primary lg:mt-32 leading-normal sm:leading-snug lg:leading-tight`}
         style={{ opacity: scrollYProgress }}
       >
-        <p className="lg:w-11/12">
+        <p className="lg:w-11/12 leading-relaxed">
           "Having guided Malik through the intricacies of React development, I
           can attest to his remarkable commitment to continuous improvement. He
           has become a competent developer whose creativity and autonomy are
