@@ -128,9 +128,10 @@ const Div4 = () => {
         style={{ opacity: scrollYProgress }}
       >
         <p className="lg:w-11/12">
-          “Malik isn't just a developer, he's the kind that sees the matrix
-          behind the code. Whether leading the charge or supporting the team,
-          his input is invaluable.”
+          “Malik has stood out not only for his ability to quickly grasp new
+          concepts but also for his innovative spirit that adds significant
+          value to every project he touches. His passion for web development and
+          commitment to excellence are truly inspiring.”
         </p>
         <p className="pt-6 lg:pt-10">
           <span className={`${inter.className} font-bold `}>
@@ -159,14 +160,17 @@ const Div5 = () => {
         style={{ opacity: scrollYProgress }}
       >
         <p className="lg:w-11/12">
-          "Working with Malik goes beyond mere coding; it's like he dances with
-          the algorithms. His intuition for design is matched only by his
-          technical prowess. In every project, a rare blend of inspiration and
-          precision."
+          "Having guided Malik through the intricacies of React development, I
+          can attest to his remarkable commitment to continuous improvement. He
+          has become a competent developer whose creativity and autonomy are
+          major assets to any team or project."
         </p>
         <p className="pt-6 lg:pt-10">
-          <span className={`${inter.className} font-bold `}> Jeremy</span> -
-          Senior full-stack developer
+          <span className={`${inter.className} font-bold `}>
+            {" "}
+            Jeremy Claudant
+          </span>{" "}
+          - Senior full-stack developer
         </p>
       </motion.div>
     </>
