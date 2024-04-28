@@ -59,7 +59,8 @@ const Div1 = () => {
             </HoverCardContent>
           </HoverCard>
           , I craft smooth and engaging user experiences by harnessing the
-          latest technological advancements in web development.
+          latest technological advancements in web development. I graduated from
+          Openclassrooms.
         </div>
       </motion.div>
     </>
