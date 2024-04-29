@@ -51,5 +51,40 @@
       "Token generation (JWT)"
     ],
     "homepage": true
+  },
+  {
+    "id": 3,
+    "name": "Alexis Rodrigues",
+    "link": "https://alexismarketeur.com/",
+    "github": "https://github.com/maliksynt/marketingPage",
+    "cover": "/images/AlexisRodrigues/Cover.jpg",
+    "video": "/videos/avion.webm",
+    "videomp4": "/videos/avion.mp4",
+    "photos": [
+      "/images/AlexisRodrigues/0.jpg",
+      "/images/AlexisRodrigues/1.jpg",
+      "/images/AlexisRodrigues/4.png",
+      "/images/AlexisRodrigues/3.jpg",
+      "/images/AlexisRodrigues/2.png",
+      "/images/AlexisRodrigues/5.png",
+      "/images/AlexisRodrigues/6.jpg",
+      "/images/AlexisRodrigues/7.png",
+      "/images/AlexisRodrigues/8.jpg",
+      "/images/AlexisRodrigues/9.jpg",
+      "/images/AlexisRodrigues/10.jpg"
+    ],
+    "description": [
+      "I designed and deployed a landing page for a freelance Google Ads expert, intended to enhance client acquisition through strategic design and functionality. Beginning with comprehensive wireframes, the process extended through to the final deployment of a visually striking and highly functional site.",
+      "The focus of the design was on user engagement and conversion, utilizing a simple color palette and bold typography to ensure visibility without overwhelming users. I employed pure CSS and integrated Aceternity UI for dynamic animations, enhancing interaction and retaining user interest. Strategic positioning of Calls-to-Action and adept layout design were central to converting visitors into clients, ultimately aiding in the successful launch of the client’s business.",
+      "This project significantly advanced my skills in several areas; SEO techniques were refined to boost the site's visibility, UX/UI design principles were applied to optimize user experience, and my proficiency with CSS animations was expanded. It offered a practical experience that not only contributed to my technical skills but also deepened my understanding of how to effectively engage and convert site visitors in a competitive digital landscape."
+    ],
+    "technologies": ["NextJS", "TailwindCSS", "UX/UI"],
+    "features": [
+      "SEO optimization",
+      "Shadcn UI to style components",
+      "Aceternity UI for animated components",
+      "UX/UI design with Figma"
+    ],
+    "homepage": true
   }
 ]
