@@ -81,9 +81,10 @@
     "technologies": ["NextJS", "TailwindCSS", "UX/UI"],
     "features": [
       "SEO optimization",
+      "UX/UI design with Figma",
       "Shadcn UI to style components",
       "Aceternity UI for animated components",
-      "UX/UI design with Figma"
+      "CSS animations"
     ],
     "homepage": true
   }
