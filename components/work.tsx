@@ -38,7 +38,7 @@ const WorkComponent = ({ id, display }: WorkComponentProps) => {
               preload="metadata"
               loop
               autoPlay
-              className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] ${
+              className={`w-screen h-[500px] object-cover overflow-hidden rounded-[20px] bg-neutral-300 ${
                 display === "selected" ? "md:h-[600px] lg:h-[700px]" : null
               } xl:h-[${display === "all" ? "600px" : "800px"}]`}
             >
